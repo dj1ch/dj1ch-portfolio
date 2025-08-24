@@ -28,6 +28,11 @@ const socials = [
     name: "Codecademy",
     icon: Simple.IconCodecademy,
   },
+  {
+    href: "https://oshwlab.com/tg.1ch0712/",
+    name: "OSHWLab",
+    icon: Simple.IconOpenSourceHardwareLab,
+  },
 ];
 
 export default () => {

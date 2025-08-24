@@ -16,6 +16,30 @@ const stacks = [
     icon: Simple.IconEspressif,
     url: "https://www.espressif.com/",
   },
+  {
+    name: "nRF-SDK",
+    category: "Development",
+    icon: Simple.IconNordic,
+    url: "https://www.nordicsemi.com/",
+  },
+  {
+    name: "Nix",
+    category: "Development",
+    icon: Simple.IconNix,
+    url: "https://nixos.org/",
+  },
+  {
+    name: "EasyEDA",
+    category: "PCB Design",
+    icon: Simple.IconEasyEDA,
+    url: "https://easyeda.com/",
+  },
+  {
+    name: "KiCAD",
+    category: "PCB Design",
+    icon: Simple.IconKiCAD,
+    url: "https://www.kicad.org/",
+  },
 ];
 
 export default () => {

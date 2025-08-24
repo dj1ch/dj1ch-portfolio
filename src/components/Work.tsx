@@ -13,7 +13,7 @@ const workExperience = [
     title: "Freelance Developer",
     company: "Self-Employed",
     duration: "September 2023 - Present",
-    description: "Designed and implemented firmware for embedded devices; worked on websites for open source projects.",
+    description: "Designed and implemented firmware for embedded devices; worked on websites for open source projects. Designed and developed PCBs on my own.",
     icon: Lucide.IconChip,
   },
 ];
