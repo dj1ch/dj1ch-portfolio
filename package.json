@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
-    "@astrojs/cloudflare": "^12.6.5",
+    "@astrojs/cloudflare": "^12.6.6",
     "@astrojs/node": "^9.4.1",
     "@astrojs/vercel": "^8.0.4",
     "@klass/core": "4.0.0-next.28",
