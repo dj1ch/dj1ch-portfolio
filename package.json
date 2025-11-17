@@ -29,7 +29,7 @@
     "@radix-ui/react-separator": "^1.1.7",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "astro": "^5.14.4",
+    "astro": "^5.15.6",
     "clsx": "^2.1.1",
     "dotenv": "^17.2.1",
     "react": "^18.3.1",
