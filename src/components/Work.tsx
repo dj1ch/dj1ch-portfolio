@@ -10,10 +10,17 @@ const workExperience = [
     icon: Lucide.IconNotebook,
   },
   {
+    title: "Student-Athlete",
+    company: "Torrance High School",
+    duration: "August 2023 - Present",
+    description: "Currently a junior. I have been wrestling since my freshman year and am currently the team captain.",
+    icon: Lucide.IconNotebook,
+  },
+  {
     title: "Freelance Developer",
     company: "Self-Employed",
     duration: "September 2023 - Present",
-    description: "Designed and implemented firmware for embedded devices; worked on websites for open source projects. Designed and developed PCBs on my own.",
+    description: "Designed and implemented firmware for embedded devices; additionally worked on websites for open source projects. Designed and developed PCBs on my own during my free time.",
     icon: Lucide.IconChip,
   },
 ];
