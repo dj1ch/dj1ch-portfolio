@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ContactForm: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const [status, setStatus] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-  
+
     if (!subject || !email || !message) {
-      setStatus('Please fill in all the required fields.');
+      setStatus("Please fill in all the required fields.");
       return;
     }
-  
+
     const content = { email, subject, message };
-    console.log('Sending content:', content);
-  
+    console.log("Sending content:", content);
+
     try {
-      const response = await fetch('/api/send', {
-        method: 'POST',
+      const response = await fetch("/api/send", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(content),
       });
-  
+
       if (response.ok) {
-        setStatus('Message sent successfully!');
+        setStatus("Message sent successfully!");
       } else {
         const error = await response.text();
         setStatus(`Error: ${error}`);
@@ -39,13 +39,17 @@ const ContactForm: React.FC = () => {
       }
     }
   };
-  
 
   return (
     <div className="contact-form max-w-md mx-auto mt-8 p-6 bg-neutral-2 rounded-2xl">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="subject" className="block text-sm font-medium text-neutral-8">Subject</label>
+          <label
+            htmlFor="subject"
+            className="block text-sm font-medium text-neutral-8"
+          >
+            Subject
+          </label>
           <input
             type="text"
             id="subject"
@@ -56,7 +60,12 @@ const ContactForm: React.FC = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-neutral-8">Email</label>
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-neutral-8"
+          >
+            Email
+          </label>
           <input
             type="email"
             id="email"
@@ -67,7 +76,12 @@ const ContactForm: React.FC = () => {
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="message" className="block text-sm font-medium text-neutral-8">Message</label>
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium text-neutral-8"
+          >
+            Message
+          </label>
           <textarea
             id="message"
             value={message}
@@ -79,12 +93,14 @@ const ContactForm: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="w-full px-4 py-2 bg-blue-600 text-white rounded-2xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 border border-neutral-4"
+          className="w-full px-4 py-2 bg-primary-9 text-white rounded-2xl hover:bg-primary-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-8 border border-primary-6"
         >
           Send Message
         </button>
       </form>
-      {status && <p className="mt-4 text-center text-sm text-neutral-7">{status}</p>}
+      {status && (
+        <p className="mt-4 text-center text-sm text-neutral-7">{status}</p>
+      )}
     </div>
   );
 };
