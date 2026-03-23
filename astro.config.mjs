@@ -24,6 +24,7 @@ export default defineConfig({
     platformProxy: {
       enabled: false,
     },
+    imageService: "passthrough",
   }),
   vite: {
     plugins: [tailwindcss()],
