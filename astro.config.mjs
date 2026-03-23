@@ -1,15 +1,16 @@
-import { defineConfig, envField } from "astro/config";
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 
-import tailwind from "@astrojs/tailwind";
+import { defineConfig, envField } from "astro/config";
 
 import react from "@astrojs/react";
 
 import cloudflare from "@astrojs/cloudflare";
 
 export default defineConfig({
-  output: 'server',
-  buildOptions: { out: './dist' },
-  base: '',
+  output: "server",
+  buildOptions: { out: "./dist" },
+  base: "",
   env: {
     schema: {
       SECRET_WEBHOOK_URL: envField.string({
@@ -18,9 +19,13 @@ export default defineConfig({
       }),
     },
   },
-  integrations: [
-    tailwind({ applyBaseStyles: false }),
-    react(),
-  ],
-  adapter: cloudflare(),
+  integrations: [react()],
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: false,
+    },
+  }),
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
