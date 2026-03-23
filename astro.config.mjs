@@ -16,7 +16,7 @@ export default defineConfig({
   integrations: [react()],
   adapter: cloudflare({
     platformProxy: {
-      enabled: false,
+      enabled: true,
     },
     imageService: "passthrough",
     sessions: false,

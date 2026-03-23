@@ -1,15 +1,15 @@
 {
-  "name": "astrolinkt",
+  "name": "dj1ch-portfolio",
   "type": "module",
   "version": "0.0.1",
   "license": "MIT",
   "author": {
-    "name": "flamrdevs",
-    "url": "https://github.com/flamrdevs"
+    "name": "dj1ch",
+    "url": "https://github.com/dj1ch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/flamrdevs/astrolinkt.git"
+    "url": "https://github.com/dj1ch/dj1ch-portfolio.git"
   },
   "scripts": {
     "dev": "astro dev",
