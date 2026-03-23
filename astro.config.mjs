@@ -1,16 +1,10 @@
-import { defineConfig } from "vite";
-import tailwindcss from "@tailwindcss/vite";
-
 import { defineConfig, envField } from "astro/config";
-
+import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
-
 import cloudflare from "@astrojs/cloudflare";
 
 export default defineConfig({
   output: "server",
-  buildOptions: { out: "./dist" },
-  base: "",
   env: {
     schema: {
       SECRET_WEBHOOK_URL: envField.string({
@@ -25,6 +19,7 @@ export default defineConfig({
       enabled: false,
     },
     imageService: "passthrough",
+    sessions: false,
   }),
   vite: {
     plugins: [tailwindcss()],
