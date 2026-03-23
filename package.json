@@ -15,7 +15,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build --output server",
-    "deploy": "npm run build && wrangler deploy",
+    "deploy": "npm run build && wrangler deploy ./dist/server/index.js",
     "preview": "wrangler pages dev ./dist",
     "astro": "astro"
   },
