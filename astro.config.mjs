@@ -20,6 +20,7 @@ export default defineConfig({
     },
     imageService: "passthrough",
     sessions: false,
+    mode: "directory",
   }),
   vite: {
     plugins: [tailwindcss()],

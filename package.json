@@ -14,7 +14,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build --output server && node -e \"const fs=require('fs');fs.rmSync('dist/server/wrangler.json',{force:true});fs.rmSync('.wrangler',{recursive:true,force:true});\"",
+    "build": "astro check && astro build --output server",
+    "deploy": "npm run build && wrangler deploy",
     "preview": "wrangler pages dev ./dist",
     "astro": "astro"
   },

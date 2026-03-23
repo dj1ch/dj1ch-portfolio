@@ -1,4 +1,7 @@
 name = "dj1ch-portfolio"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "./dist"
+main = "./dist/server/index.js"
+
+[assets]
+directory = "./dist/client"
