@@ -20,7 +20,7 @@ export default () => {
       </div>
 
       <div>
-        High School student-athlete. Currently into embedded systems, radio,
+        High School Student-Athlete. Currently into embedded systems, radio,
         SBCs, and microcontrollers.
       </div>
     </div>
