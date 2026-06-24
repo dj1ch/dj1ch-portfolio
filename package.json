@@ -43,7 +43,7 @@
     "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.7",
     "tailwindcss": "^4.2.2",
-    "wrangler": "^4.95.0"
+    "wrangler": "^4.104.0"
   },
   "engines": {
     "node": "22.x"
